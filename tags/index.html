@@ -39,6 +39,11 @@
     <link rel="shortcut icon" href="/75b3205d334820666b09eb7dac36a6a9(1).jpg">
   
   
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.net/waline/3.0.0-alpha.9/waline.css"
+    />
+  
   
 <link rel="stylesheet" href="/css/style.css">
 
@@ -251,6 +256,23 @@
 
 
 
+
+  <div id="wl-comment-card" class="wl-comment-card">
+    <div class="main-title-bar">
+      <div class="main-title-dot"></div>
+      <div class="main-title">留言 </div>
+    </div>
+    <div id="waline"></div>
+  </div>
+  <script type="module">
+    import { init } from 'https://cdn.staticfile.net/waline/3.0.0-alpha.9/waline.js';
+
+    init({
+      el: '#waline',
+      serverURL: 'https://waline.blog.zhaohonghao-qwq.com/',
+      dark: 'html[theme="dark"]',
+    });
+  </script>
 
     </div>
     <div id="footer-wrapper">
