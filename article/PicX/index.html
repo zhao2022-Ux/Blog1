@@ -14,26 +14,33 @@
   
 
   
-  <title>黑客少年 の Blog</title>
+  <title>✨五分钟从零搭建自己的图床 | 黑客少年 の Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
-  <meta name="description" content="Hey, Look here! 👋  I’m Zhao Honghao, a office worker from Ningbo, China. I ❤️ code because I am a coder.  ⚒️ CSS&#x2F;HTML&#x2F;JavaScript&#x2F;Vue&#x2F;Typescript&#x2F;React&#x2F;PHP 📦 Building ✏️ VS Code &#x2F; Notepad++ &#x2F; Navicat">
-<meta property="og:type" content="website">
-<meta property="og:title" content="黑客少年 の Blog">
-<meta property="og:url" content="http://zhaohonghao-qwq.com/about/index.html">
+  <meta name="description" content="前言在洛谷，拥有洛谷图床。但是，洛谷图床有些时候对用户名颜色、文件大小等有要求。于是，小编今天教你不用代码，五分钟搭建一个属于自己的个人图床。 PicX?️ PicX 是一款基于 GitHub API 开发的图床工具，提供图片上传托管、生成图片链接和常用图片工具箱服务。 ? 建议将本站添加到浏览器收藏夹，方便下次使用。 快捷键：Ctrl + D ? 作者：@XPoet ? 仓库：https:&#x2F;&#x2F;g">
+<meta property="og:type" content="article">
+<meta property="og:title" content="✨五分钟从零搭建自己的图床">
+<meta property="og:url" content="http://zhaohonghao-qwq.com/article/PicX/index.html">
 <meta property="og:site_name" content="黑客少年 の Blog">
-<meta property="og:description" content="Hey, Look here! 👋  I’m Zhao Honghao, a office worker from Ningbo, China. I ❤️ code because I am a coder.  ⚒️ CSS&#x2F;HTML&#x2F;JavaScript&#x2F;Vue&#x2F;Typescript&#x2F;React&#x2F;PHP 📦 Building ✏️ VS Code &#x2F; Notepad++ &#x2F; Navicat">
+<meta property="og:description" content="前言在洛谷，拥有洛谷图床。但是，洛谷图床有些时候对用户名颜色、文件大小等有要求。于是，小编今天教你不用代码，五分钟搭建一个属于自己的个人图床。 PicX?️ PicX 是一款基于 GitHub API 开发的图床工具，提供图片上传托管、生成图片链接和常用图片工具箱服务。 ? 建议将本站添加到浏览器收藏夹，方便下次使用。 快捷键：Ctrl + D ? 作者：@XPoet ? 仓库：https:&#x2F;&#x2F;g">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://camo.githubusercontent.com/aafc7f41bdcf5fd51a6f6b415ce598597590077df6bbd97369a50eb5c2f9aa19/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d7a68616f323032322d55782673686f775f69636f6e733d7472756526686964655f7469746c653d74727565">
-<meta property="article:published_time" content="2024-07-10T08:44:29.106Z">
-<meta property="article:modified_time" content="2024-07-10T08:44:29.106Z">
+<meta property="og:image" content="https://cdn.zhaohonghao-qwq.com/img/img%E6%97%A0%E6%A0%871%E9%A2%98.1hs3bvxs1u.png">
+<meta property="og:image" content="https://cdn.zhaohonghao-qwq.com/img/%E6%97%A0%E6%A0%87%E9%A2%98.7ax1mek27a.webp">
+<meta property="og:image" content="https://cdn.zhaohonghao-qwq.com/img/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE-2024-07-07-173856.2vemh5ijie.webp">
+<meta property="article:published_time" content="2024-07-07T08:35:00.000Z">
+<meta property="article:modified_time" content="2024-07-23T11:12:26.194Z">
 <meta property="article:author" content="黑客少年">
-<meta property="article:tag" content="blog">
+<meta property="article:tag" content="PicX">
+<meta property="article:tag" content="洛谷">
+<meta property="article:tag" content="Github">
+<meta property="article:tag" content="图床">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="视频教程">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://camo.githubusercontent.com/aafc7f41bdcf5fd51a6f6b415ce598597590077df6bbd97369a50eb5c2f9aa19/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d7a68616f323032322d55782673686f775f69636f6e733d7472756526686964655f7469746c653d74727565">
+<meta name="twitter:image" content="https://cdn.zhaohonghao-qwq.com/img/img%E6%97%A0%E6%A0%871%E9%A2%98.1hs3bvxs1u.png">
   
     <link rel="alternate" href="/atom.xml" title="黑客少年 の Blog" type="application/atom+xml">
   
@@ -232,7 +239,9 @@
        
 
 
-<article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<article id="post-PicX" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+    
    
   <div class="article-inner">
     <div class="article-main">
@@ -243,7 +252,7 @@
   
     
       <h1 class="p-name article-title" itemprop="headline name">
-        无标题
+        ✨五分钟从零搭建自己的图床
       </h1>
     
   
@@ -251,37 +260,94 @@
 
         <div class='meta-info-bar'>
           <div class="meta-info">
-  <time class="dt-published" datetime="2024-07-10T08:44:29.106Z" itemprop="datePublished">2024-07-10</time>
+  <time class="dt-published" datetime="2024-07-07T08:35:00.000Z" itemprop="datePublished">2024-07-07</time>
 </div>
           <div class="need-seperator meta-info">
             <div class="meta-cate-flex">
   
-    未分类 
+  <a class="meta-cate-link" href="/categories/%E7%A7%91%E6%8A%80%C2%B7%E5%B7%A5%E7%A8%8B/">科技·工程</a>
    
 </div>
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            513 词 
+            1.2k 词 
           </div>
         </div>
         
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Github/" rel="tag">Github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PicX/" rel="tag">PicX</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9B%BE%E5%BA%8A/" rel="tag">图床</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B4%9B%E8%B0%B7/" rel="tag">洛谷</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B/" rel="tag">视频教程</a></li></ul>
+
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         
-          <h2 id="Hey-Look-here-👋"><a href="#Hey-Look-here-👋" class="headerlink" title="Hey, Look here! 👋"></a>Hey, Look here! 👋</h2><p><a href="#hey-look-here-wave"></a></p>
-<p><a target="_blank" rel="noopener" href="https://camo.githubusercontent.com/aafc7f41bdcf5fd51a6f6b415ce598597590077df6bbd97369a50eb5c2f9aa19/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d7a68616f323032322d55782673686f775f69636f6e733d7472756526686964655f7469746c653d74727565"><img src="https://camo.githubusercontent.com/aafc7f41bdcf5fd51a6f6b415ce598597590077df6bbd97369a50eb5c2f9aa19/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d7a68616f323032322d55782673686f775f69636f6e733d7472756526686964655f7469746c653d74727565" alt=""></a></p>
-<p>I’m Zhao Honghao, a office worker from Ningbo, China. I ❤️ code because I am a coder.</p>
-<ul>
-<li>⚒️ CSS/HTML/JavaScript/Vue/Typescript/React/PHP</li>
-<li>📦 Building</li>
-<li>✏️ VS Code / Notepad++ / Navicat</li>
-<li>🌱 Prepare to study advanced web front end development</li>
-<li>👨 Pronouns: he/him</li>
-<li>🤔 Constantly make yourself better</li>
+          <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>在洛谷，拥有洛谷图床。但是，洛谷图床有些时候对用户名颜色、文件大小等有要求。于是，小编今天教你<strong>不用代码</strong>，五分钟搭建一个属于自己的个人图床。</p>
+<h3 id="PicX"><a href="#PicX" class="headerlink" title="PicX"></a>PicX</h3><p>?️ PicX 是一款基于 GitHub API 开发的图床工具，提供图片上传托管、生成图片链接和常用图片工具箱服务。</p>
+<p>? 建议将本站添加到浏览器收藏夹，方便下次使用。 快捷键：Ctrl + D</p>
+<p>? 作者：@<a target="_blank" rel="noopener" href="https://xpoet.cn/">XPoet</a></p>
+<p>? 仓库：<a target="_blank" rel="noopener" href="https://github.com/XPoet/picx">https://github.com/XPoet/picx</a></p>
+<p>? 文档：<a target="_blank" rel="noopener" href="https://picx-docs.xpoet.cn">https://picx-docs.xpoet.cn</a></p>
+<h3 id="前置要求"><a href="#前置要求" class="headerlink" title="前置要求"></a>前置要求</h3><ul>
+<li>拥有一个 Github 账号，没有可以<a target="_blank" rel="noopener" href="https://docs.github.com/zh/get-started/start-your-journey/creating-an-account-on-github">注册</a>。</li>
 </ul>
-<h4 id="📊-Weekly-development-breakdown"><a href="#📊-Weekly-development-breakdown" class="headerlink" title="📊 Weekly development breakdown"></a>📊 Weekly development breakdown</h4><p><a href="#bar_chart--weekly-development-breakdown"></a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Vue           2 hrs 37 mins   █████████▒░░░░░░░░░░░░░░░   37.76 % </span><br><span class="line">React         2 hrs 4 mins    ███████▒░░░░░░░░░░░░░░░░░   29.88 % </span><br><span class="line">Markdown      42 mins         ██▓░░░░░░░░░░░░░░░░░░░░░░   10.26 % </span><br><span class="line">Javascript    32 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   07.82 % </span><br><span class="line">css           26 mins         █▓░░░░░░░░░░░░░░░░░░░░░░░   06.44 % </span><br></pre></td></tr></table></figure>
+<h3 id="新建存储库"><a href="#新建存储库" class="headerlink" title="新建存储库"></a>新建存储库</h3><ol>
+<li>打开<a target="_blank" rel="noopener" href="https://github.com/zhao2022-Ux?tab=repositories">个人存储库</a>，点击 $\tt{\color{green} New}$，转到新建页面。</li>
+<li>创建一个新项目，如下图所示：<br><img src="https://cdn.zhaohonghao-qwq.com/img/img无标1题.1hs3bvxs1u.png" alt=""></li>
+</ol>
+<h3 id="初始化-PicX"><a href="#初始化-PicX" class="headerlink" title="初始化 PicX"></a>初始化 PicX</h3><ul>
+<li><p>使用 OAuth。</p>
+<blockquote>
+<ol>
+<li>打开官网<a target="_blank" rel="noopener" href="https://picx.xpoet.cn/#/">https://picx.xpoet.cn/#/</a>，单击<strong>使用 GitHub OAuth 授权登录</strong>。</li>
+<li>按照 Github 给出的指示一步一步下去。</li>
+<li>进入<a target="_blank" rel="noopener" href="https://picx.xpoet.cn/#/config">图床配置</a> 填写用户名，项目名称，目录等，就好了。</li>
+</ol>
+</blockquote>
+</li>
+<li><p>使用 Token。</p>
+<blockquote>
+<ol>
+<li>打开官网<a target="_blank" rel="noopener" href="https://picx.xpoet.cn/#/">https://picx.xpoet.cn/#/</a>，单击<strong>填写 GitHub Token 登录</strong>。</li>
+<li>打开 Github 新建 Token，见<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1QzhUebEHi/?zw&amp;spm_id_from=888.80996.embed_old&amp;vd_source=6a0b71a226325dba546e5d6dd9e9c7d0">视频</a>。</li>
+</ol>
+<ul>
+<li>⚠️<strong>Token 只会在创建后出现一次，刷新就没了，请自己截图保存。</strong></li>
+</ul>
+<ol>
+<li>将 Token 输入即可绑定。</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h3 id="上传图片"><a href="#上传图片" class="headerlink" title="上传图片"></a>上传图片</h3><ul>
+<li>按照平时使用洛谷图床的步骤使用即可。</li>
+<li>点击 <strong>复制链接</strong> 即可获取图片链接。</li>
+</ul>
+<h2 id="自定义域名（可选）"><a href="#自定义域名（可选）" class="headerlink" title="自定义域名（可选）"></a>自定义域名（可选）</h2><p>有些人不喜欢 GithubUserName.github.io 这个域名，那么就自己买一个域名用来绑定图床，比如 cdn.luogu.com.cn。</p>
+<h3 id="将网站部署至-Vercel"><a href="#将网站部署至-Vercel" class="headerlink" title="将网站部署至 Vercel"></a>将网站部署至 Vercel</h3><ol>
+<li>打开 <a href="vercel.com">Vercel</a>，登录账号，没有可以注册。</li>
+<li>点击 $\tt{Add New}$ $\dots$，选择 Project。</li>
+<li>找到 Import Git Repository，将图床的 Github 项目名找到，点击 Import，找不到可以搜索。</li>
+<li>按照指南一步一步下去，最后完成会出现烟花界面。</li>
+</ol>
+<h3 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h3><ol>
+<li>打开自己的域名运营商，找到域名解析控制台。</li>
+<li>添加 <code>CHEAM</code> 类型的域名解析，值为 <code>cname.vercel-dns.com</code>（在项目已经部署至 Vercel 的情况下）。</li>
+<li>打开 Vercel，找到项目，点击 Settings，找到 domain，在里面输入域名。<br><img src="https://cdn.zhaohonghao-qwq.com/img/无标题.7ax1mek27a.webp" alt=""></li>
+</ol>
+<p>最后稍等一会，域名绑定成功。</p>
+<h3 id="更改路径"><a href="#更改路径" class="headerlink" title="更改路径"></a>更改路径</h3><ol>
+<li>打开 <a target="_blank" rel="noopener" href="https://picx.xpoet.cn/#/">https://picx.xpoet.cn/#/</a>，右侧找到设置，下拉找到图片链接规则配置。</li>
+<li>将 GitHub Pages 的链接规则改为 <code>https://自定义域名/&#123;&#123;path&#125;&#125;</code>，出现警告，不用管它。</li>
+<li>将数据同步到云端仓库。<br><img src="https://cdn.zhaohonghao-qwq.com/img/屏幕截图-2024-07-07-173856.2vemh5ijie.webp" alt=""></li>
+<li>完成配置，可以自己测试，剩下功能自己探索。</li>
+</ol>
+<h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ul>
+<li><strong>请勿使用 PicX 上传违反你当地法律的图片，所造成的一切后果与作者无关。</strong></li>
+<li>每次更改设置后或上传图片后，要更新至云端。</li>
+<li><strong>Github Token 只会在创建后出现一次，刷新就没了，请自己截图保存。</strong></li>
+<li>有时更新失败，可能是 Github 被墙了，请稍后在尝试。</li>
+</ul>
+
         
       </div>
 
@@ -292,6 +358,29 @@
   </div>
   
     
+<nav id="article-nav">
+  <a class="article-nav-btn left  disabled "
+     >
+    <i class="fa-solid fa-angle-left"></i>
+    <p class="title-text">
+        
+    </p>
+  </a>
+  <a class="article-nav-btn right "
+    
+      href="/article/sol-P10676/"
+      title="P10676 『STA - R6』b20"
+     >
+
+    <p class="title-text">
+      
+        P10676 『STA - R6』b20
+        
+    </p>
+    <i class="fa-solid fa-angle-right"></i>
+  </a>
+</nav>
+
 
   
 </article>
