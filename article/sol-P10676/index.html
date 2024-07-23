@@ -14,21 +14,23 @@
   
 
   
-  <title>标签: 题解 | 黑客少年 の Blog</title>
+  <title>P10676 『STA - R6』b20 | 黑客少年 の Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
-  <meta name="description" content="积土成山，风雨兴焉；积水成渊，蛟龙生焉。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="黑客少年 の Blog">
-<meta property="og:url" content="http://zhaohonghao-qwq.com/tags/%E9%A2%98%E8%A7%A3/page/2/index.html">
+  <meta name="description" content="Description题目传送门：P10676 『STA - R6』b20。 简单模拟题。 Analysis给定一个字符串（网站名称）和一个整数（粉丝数），输出网站名称的第一位，和这个整数。 方便起见都做成 $\operatorname{string}$，输出 $s_0 ^{[1]}$ 和 $s1 ^{[2]}$ 即可。  $^{[1]}$ 指网站名称的第一位，下表从 $0$ 开始。 $^{[2]">
+<meta property="og:type" content="article">
+<meta property="og:title" content="P10676 『STA - R6』b20">
+<meta property="og:url" content="http://zhaohonghao-qwq.com/article/sol-P10676/index.html">
 <meta property="og:site_name" content="黑客少年 の Blog">
-<meta property="og:description" content="积土成山，风雨兴焉；积水成渊，蛟龙生焉。">
+<meta property="og:description" content="Description题目传送门：P10676 『STA - R6』b20。 简单模拟题。 Analysis给定一个字符串（网站名称）和一个整数（粉丝数），输出网站名称的第一位，和这个整数。 方便起见都做成 $\operatorname{string}$，输出 $s_0 ^{[1]}$ 和 $s1 ^{[2]}$ 即可。  $^{[1]}$ 指网站名称的第一位，下表从 $0$ 开始。 $^{[2]">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-06-30T10:20:00.000Z">
+<meta property="article:modified_time" content="2024-07-23T11:03:08.784Z">
 <meta property="article:author" content="黑客少年">
-<meta property="article:tag" content="blog">
+<meta property="article:tag" content="题解">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="黑客少年 の Blog" type="application/atom+xml">
@@ -217,63 +219,117 @@
     <div id="content-body">
        
 
-<div class="archive-main-card">
-    <div class="archive-top">
-      <div class="main-title-bar">
-        <div class="main-title-dot"></div>
-        <h1 class="article-title">归档</h1>
-      </div>    
+
+<article id="post-sol-P10676" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+    
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 class="p-name article-title" itemprop="headline name">
+        P10676 『STA - R6』b20
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2024-06-30T10:20:00.000Z" itemprop="datePublished">2024-06-30</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/">洛谷题解</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            380 词 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>题目传送门：<a href="/problem/P10676">P10676 『STA - R6』b20</a>。</p>
+<p>简单模拟题。</p>
+<h3 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h3><p>给定一个字符串（网站名称）和一个整数（粉丝数），输出网站名称的<strong>第一位</strong>，和这个整数。</p>
+<p>方便起见都做成 $\operatorname{string}$，输出 $s_0 ^{[1]}$ 和 $s1 ^{[2]}$ 即可。</p>
+<ul>
+<li>$^{[1]}$ 指网站名称的第一位，下表从 $0$ 开始。</li>
+<li>$^{[2]}$ 指粉丝数，方便做成字符串。</li>
+</ul>
+<p>注意输出<strong>不用带空格</strong>。</p>
+<h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	string s; <span class="comment">//网站名称</span></span><br><span class="line">	string s1;<span class="comment">//粉丝数量</span></span><br><span class="line">	</span><br><span class="line">	cin &gt;&gt; s &gt;&gt; s1;</span><br><span class="line">	cout &lt;&lt; s[<span class="number">0</span>] &lt;&lt; s1;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        
+      </div>
+
+         
     </div>
     
-    
-      
-      
-        
-        <div class="year-line">
-            <div class="year-num">2024</div>
-            <div class="dot-wrapper">
-                <div class="dot"></div>
-            </div>
-            <div class="article-count">2 篇文章</div>
-        </div>
-      
-      <a class="archive-article-link" href="/article/sol-P10264/" title="P10264 [GESP202403 八级] 接竹竿">
-        <div class="date">05-11</div>
-        <div class="line">
-            <div class="dot"></div>
-        </div>
-        <div class="title">
-            <div class="title-inner">
-                
-                    P10264 [GESP202403 八级] 接竹竿
-                
-            </div>
-        </div>
-        <div class="tags">
-            #题解
-        </div>
-      </a>
-    
-      
-      
-      <a class="archive-article-link" href="/article/sol-P10314/" title="P10314 [SHUPC 2024] 函数">
-        <div class="date">04-11</div>
-        <div class="line">
-            <div class="dot"></div>
-        </div>
-        <div class="title">
-            <div class="title-inner">
-                
-                    P10314 [SHUPC 2024] 函数
-                
-            </div>
-        </div>
-        <div class="tags">
-            #题解
-        </div>
-      </a>
-    
+     
   </div>
+  
+    
+<nav id="article-nav">
+  <a class="article-nav-btn left  disabled "
+     >
+    <i class="fa-solid fa-angle-left"></i>
+    <p class="title-text">
+        
+    </p>
+  </a>
+  <a class="article-nav-btn right "
+    
+      href="/article/sol-P10415/"
+      title="P10415 [蓝桥杯 2023 国 A] 切割"
+     >
+
+    <p class="title-text">
+      
+        P10415 [蓝桥杯 2023 国 A] 切割
+        
+    </p>
+    <i class="fa-solid fa-angle-right"></i>
+  </a>
+</nav>
+
+
+  
+</article>
+
+
+
+
+
+
+  <div id="wl-comment-card" class="wl-comment-card">
+    <div class="main-title-bar">
+      <div class="main-title-dot"></div>
+      <div class="main-title">留言 </div>
+    </div>
+    <div id="waline"></div>
+  </div>
+  <script type="module">
+    import { init } from 'https://cdn.staticfile.net/waline/3.0.0-alpha.9/waline.js';
+
+    init({
+      el: '#waline',
+      serverURL: 'https://waline.blog.zhaohonghao-qwq.com',
+      dark: 'html[theme="dark"]',
+    });
+  </script>
+
     </div>
     <div id="footer-wrapper">
       <footer id="footer">
