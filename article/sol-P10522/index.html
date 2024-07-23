@@ -14,21 +14,23 @@
   
 
   
-  <title>归档: 2024/4 | 黑客少年 の Blog</title>
+  <title>P10522 [XJTUPC2024] 雪中楼 | 黑客少年 の Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
-  <meta name="description" content="积土成山，风雨兴焉；积水成渊，蛟龙生焉。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="黑客少年 の Blog">
-<meta property="og:url" content="http://zhaohonghao-qwq.com/archives/2024/04/index.html">
+  <meta name="description" content="Description题目传送门：P10522 [XJTUPC2024] 雪中楼。 由于 $n \le 2 \times 10^5$，插入次数太多，考虑维护链表。 Analysis对于每次操作，输入 $a_i$，若 $i&#x3D;0$ 就将 $a_i$ 插到链表尾部，否则插到 $a_i$ 左边，最后翻转完输出，就这么简单。 Code1234567891011121314151617181920212223">
+<meta property="og:type" content="article">
+<meta property="og:title" content="P10522 [XJTUPC2024] 雪中楼">
+<meta property="og:url" content="http://zhaohonghao-qwq.com/article/sol-P10522/index.html">
 <meta property="og:site_name" content="黑客少年 の Blog">
-<meta property="og:description" content="积土成山，风雨兴焉；积水成渊，蛟龙生焉。">
+<meta property="og:description" content="Description题目传送门：P10522 [XJTUPC2024] 雪中楼。 由于 $n \le 2 \times 10^5$，插入次数太多，考虑维护链表。 Analysis对于每次操作，输入 $a_i$，若 $i&#x3D;0$ 就将 $a_i$ 插到链表尾部，否则插到 $a_i$ 左边，最后翻转完输出，就这么简单。 Code1234567891011121314151617181920212223">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-05-23T11:52:00.000Z">
+<meta property="article:modified_time" content="2024-07-23T09:33:18.577Z">
 <meta property="article:author" content="黑客少年">
-<meta property="article:tag" content="blog">
+<meta property="article:tag" content="题解">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="黑客少年 の Blog" type="application/atom+xml">
@@ -212,44 +214,116 @@
     <div id="content-body">
        
 
-<div class="archive-main-card">
-    <div class="archive-top">
-      <div class="main-title-bar">
-        <div class="main-title-dot"></div>
-        <h1 class="article-title">归档</h1>
-      </div>    
+
+<article id="post-sol-P10522" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+    
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 class="p-name article-title" itemprop="headline name">
+        P10522 [XJTUPC2024] 雪中楼
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2024-05-23T11:52:00.000Z" itemprop="datePublished">2024-05-23</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/">洛谷题解</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            633 词 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>题目传送门：<a href="/problem/p10522">P10522 [XJTUPC2024] 雪中楼</a>。</p>
+<p>由于 $n \le 2 \times 10^5$，插入次数太多，考虑维护链表。</p>
+<h3 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h3><p>对于每次操作，输入 $a_i$，若 $i=0$ 就将 $a_i$ 插到链表尾部，否则插到 $a_i$ 左边，最后翻转完输出，就这么简单。</p>
+<h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAXN 2e5 + 10</span></span><br><span class="line"></span><br><span class="line">list &lt;<span class="type">int</span>&gt; l;</span><br><span class="line">list &lt;<span class="type">int</span>&gt; :: iterator number[<span class="built_in">int</span>(MAXN)] = </span><br><span class="line">&#123;</span><br><span class="line">	l.<span class="built_in">begin</span>() , l.<span class="built_in">end</span>()</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="built_in">main</span>()</span><br><span class="line">&#123;</span><br><span class="line">	<span class="type">int</span> n;</span><br><span class="line">	cin &gt;&gt; n;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span> ; i &lt;= n ; i ++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="type">int</span> x;</span><br><span class="line">		cin &gt;&gt; x;</span><br><span class="line">		</span><br><span class="line">		number[i] = l.<span class="built_in">insert</span>(number[x] , i); <span class="comment">//插入函数</span></span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="built_in">reverse</span>(l.<span class="built_in">begin</span>() , l.<span class="built_in">end</span>()); <span class="comment">//翻转</span></span><br><span class="line">	</span><br><span class="line">	<span class="keyword">for</span>(list &lt;<span class="type">int</span>&gt; :: iterator it = l.<span class="built_in">begin</span>() ; it != l.<span class="built_in">end</span>() ; it ++) <span class="comment">// 迭代器</span></span><br><span class="line">	&#123;</span><br><span class="line">		cout &lt;&lt; *it &lt;&lt; <span class="string">&quot; &quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        
+      </div>
+
+         
     </div>
     
-    
-      
-      
-        
-        <div class="year-line">
-            <div class="year-num">2024</div>
-            <div class="dot-wrapper">
-                <div class="dot"></div>
-            </div>
-            <div class="article-count">1 篇文章</div>
-        </div>
-      
-      <a class="archive-article-link" href="/article/sol-P10314/" title="P10314 [SHUPC 2024] 函数">
-        <div class="date">04-11</div>
-        <div class="line">
-            <div class="dot"></div>
-        </div>
-        <div class="title">
-            <div class="title-inner">
-                
-                    P10314 [SHUPC 2024] 函数
-                
-            </div>
-        </div>
-        <div class="tags">
-            #题解
-        </div>
-      </a>
-    
+     
   </div>
+  
+    
+<nav id="article-nav">
+  <a class="article-nav-btn left "
+    
+      href="/article/sol-P10462/"
+      title="P10462 Number Base Conversion"
+     >
+    <i class="fa-solid fa-angle-left"></i>
+    <p class="title-text">
+      
+        P10462 Number Base Conversion
+        
+    </p>
+  </a>
+  <a class="article-nav-btn right "
+    
+      href="/article/sol-P10520/"
+      title="P10520 [XJTUPC2024] 榕树之心"
+     >
+
+    <p class="title-text">
+      
+        P10520 [XJTUPC2024] 榕树之心
+        
+    </p>
+    <i class="fa-solid fa-angle-right"></i>
+  </a>
+</nav>
+
+
+  
+</article>
+
+
+
+
+
+
+  <div id="wl-comment-card" class="wl-comment-card">
+    <div class="main-title-bar">
+      <div class="main-title-dot"></div>
+      <div class="main-title">留言 </div>
+    </div>
+    <div id="waline"></div>
+  </div>
+  <script type="module">
+    import { init } from 'https://cdn.staticfile.net/waline/3.0.0-alpha.9/waline.js';
+
+    init({
+      el: '#waline',
+      serverURL: 'https://waline.blog.zhaohonghao-qwq.com',
+      dark: 'html[theme="dark"]',
+    });
+  </script>
+
     </div>
     <div id="footer-wrapper">
       <footer id="footer">

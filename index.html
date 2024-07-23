@@ -157,6 +157,11 @@
       <div class="category-box">
             <a class="category-link" href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/">
                 洛谷题解
+                <div class="category-count">8</div>
+            </a>
+        
+            <a class="category-link" href="/categories/%E4%B8%AA%E4%BA%BA%E8%AE%B0%E5%BD%95/">
+                个人记录
                 <div class="category-count">1</div>
             </a>
         </div>
@@ -181,6 +186,16 @@
       <h3 class="widget-title">归档</h3>
       
       
+        <a class="archive-link" href="/archives/2024/06 ">
+          六月 2024 
+          <div class="archive-count">4 </div>
+        </a>
+      
+        <a class="archive-link" href="/archives/2024/05 ">
+          五月 2024 
+          <div class="archive-count">4 </div>
+        </a>
+      
         <a class="archive-link" href="/archives/2024/04 ">
           四月 2024 
           <div class="archive-count">1 </div>
@@ -196,6 +211,649 @@
     </div>
     <div id="content-body">
       
+   
+
+
+<article id="post-sol-P10313" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/article/sol-P10313/">P10313 [SHUPC 2024] 占地斗士！</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2024-06-19T08:33:00.000Z" itemprop="datePublished">2024-06-19</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/">洛谷题解</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            500 词 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            
+              Description题目传送门：P10313 [SHUPC 2024]  占地斗士！。
+简单搜索题。
+Analysis容易发现，$1\le n,m\le10$，地图很小，所以考虑 DFS 算法。
+其实是回溯，不是深度优先搜索。
+题目不难，但细节多。
+
+用变量存下已经放置的卡牌数量。
+用 $\mathcal{vis}$ 记录此卡牌是否放置过（不能直接改地图，这是回溯的重要部分）。
+其它就是回溯+剪枝即可。
+
+一些细节：
+
+暴力枚举每个形状可以放的所有位置。
+是 # 不能放，换个位置。
+可以放的话，卡牌数自增，答案加上占地格子数，不是 $1$。
+可以放，记得 $vis$ 标记位置。
+
+若所有的卡牌都可以放入，那么直接输出 $18$，不用搜了，搜了小心 $\tt TLE$，程序卡死。
+都可以放入的数据如下：
+
+输入1234567891011&gt;10 10&gt;. . . . . . . . . .&gt;. . . . . . . . . .&gt;. . . . . . . . . .&gt;. . . . . . . . . .&gt;. . . . . . . . . ....
+            
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/article/sol-P10313/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+   
+
+
+<article id="post-「EPXLQ 2024」" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/article/%E3%80%8CEPXLQ%202024%E3%80%8D/">「EPXLQ 2024」银辉描淡的石桥</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2024-06-12T12:06:00.000Z" itemprop="datePublished">2024-06-12</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/%E4%B8%AA%E4%BA%BA%E8%AE%B0%E5%BD%95/">个人记录</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            1.2k 词 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            
+              Description题目传送门：「EPXLQ 2024」银辉描淡的石桥。
+排序后计算 $\text{rank}$ 后输出即可。在此之前，可以先完成此题。
+Analysis
+先来解决输出 Hahahai! 的问题。
+
+定义变量 $flag$，先设置为都相同（true），在定义 $front$ 变量取头数据。后面输入时比较，如果发现不同的数据后，设 $flag$ 为 false。
+判断部分代码如下：1234if(a[i].score != front)&#123;	flag = false;&#125;
+
+再来解决排序的问题。
+
+先定义结构体，有两个参数：编号和成绩。接下来输入边输边存编号 a[i].number = i，后面写好自定义排序，定义映射类型（主打一个方便）的变量存 $\text{rank}$ 后输出即可。
+存 $\text{rank}$ 的代码如下：1234for(int i = 1 ; i &lt;= n ; i ++)&#123;	Rank[a[i].number] = i;&#125;解释一下就是 $Rank[$ 这个人的学号 $]=$ 这个人的名次（$a$ 已...
+            
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/article/%E3%80%8CEPXLQ%202024%E3%80%8D/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+   
+
+
+<article id="post-sol-P10401" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/article/sol-P10401/">P10401 「XSOI-R1」区间操作</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2024-06-11T12:51:00.000Z" itemprop="datePublished">2024-06-11</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/">洛谷题解</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            58 词 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            
+              由于 Hexo 无法转义，详见原文：https://www.luogu.com.cn/article/2ifgwc5e。
+
+            
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/article/sol-P10401/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+   
+
+
+<article id="post-sol-P10462" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/article/sol-P10462/">P10462 Number Base Conversion</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2024-06-01T12:50:00.000Z" itemprop="datePublished">2024-06-01</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/">洛谷题解</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            1.1k 词 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            
+              Description题目传送门：P10462 Number Base Conversion。
+直接套板子。
+Analysis模拟，记得开 long long。
+$\mathbb{n}$ 进制转十进制：套 c 语言库函数 strtol，该函数原型为 long int strtol(const char *str, char **endptr, int base)。其作用是将 $\mathcal str$ 转换成 $10$ 进制。
+十进制转 $\mathbb{n}$ 进制：短除法，用基数 $n$ 去除，直到商为 $0$，逆序输出。
+以 $114514$ 转 $16$ 进制举例：
+16{\big|}\kern{3px}114514\kern{-35px}\raisebox{-2px}{\underline{\kern{40px}}}\\
+\kern{32px}16{\big|}\kern{7px}7157\kern{-28px}\raisebox{-2px}{\underline{\kern{35px}}}\kern{5px}\cdots\kern{5px}2\\
+\kern{36p...
+            
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/article/sol-P10462/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+   
+
+
+<article id="post-sol-P10522" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/article/sol-P10522/">P10522 [XJTUPC2024] 雪中楼</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2024-05-23T11:52:00.000Z" itemprop="datePublished">2024-05-23</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/">洛谷题解</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            633 词 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            
+              Description题目传送门：P10522 [XJTUPC2024] 雪中楼。
+由于 $n \le 2 \times 10^5$，插入次数太多，考虑维护链表。
+Analysis对于每次操作，输入 $a_i$，若 $i=0$ 就将 $a_i$ 插到链表尾部，否则插到 $a_i$ 左边，最后翻转完输出，就这么简单。
+Code1234567891011121314151617181920212223242526272829303132#include &lt;bits/stdc++.h&gt;using namespace std;#define MAXN 2e5 + 10list &lt;int&gt; l;list &lt;int&gt; :: iterator number[int(MAXN)] = &#123;	l.begin() , l.end()&#125;;main()&#123;	int n;	cin &gt;&gt; n;		for(int i = 1 ; i &lt;= n ; i ++)	&#123;		int x;		cin &gt;&gt; x;				n...
+            
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/article/sol-P10522/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+   
+
+
+<article id="post-sol-P10520" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/article/sol-P10520/">P10520 [XJTUPC2024] 榕树之心</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2024-05-21T11:44:00.000Z" itemprop="datePublished">2024-05-21</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/">洛谷题解</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            573 词 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            
+              Description题目传送门：P10520 [XJTUPC2024] 榕树之心。
+求：
+x^{\prime} = \frac{1}{2} x + \frac{1}{2} yy^{\prime} = \frac{\sqrt{3}}{2} x - \frac{\sqrt{3}}{2} yAnalysis直接模拟即可（运算记得带小数）。| 式子 | 作用 || :—————: | :—————: || $\frac{1}{2}x$ | $x \div 2.0 \operatorname{or}  0.5 \times x$ || $\sqrt{x}$ |  $\operatorname{sqrt}(x \times 1.0)$ |
+Code1234567891011#include &lt;bits/stdc++.h&gt;using namespace std;int main()&#123;	int x , y;	cin &gt;&gt; x &gt;&gt; y;		cout &lt;&lt; fixed &lt;&lt; setprecision(6) &lt;&lt; (...
+            
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/article/sol-P10520/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+   
+
+
+<article id="post-sol-P10532" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/article/sol-P10532/">P10532 [XJTUPC2024] 筛法</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2024-05-20T11:19:00.000Z" itemprop="datePublished">2024-05-20</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/">洛谷题解</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            656 词 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            
+              Description题目传送门：P10532 [XJTUPC2024] 筛法
+求：
+
+\sum\limits_{i=1}^n\sum\limits_{j=1}^n\lfloor \dfrac{n}{\max(i,j)}\rfloor [i \perp j]显然发现答案为 $n^2$。
+Analysis（转自讲评视频）我们可以从几何的角度出发:
+考虑二维平面的 $n^2$ 个点 $(i,j) 1\le i,j\le n$。
+从原点向每个满足 $i\perp j$ 的点 $(i,j)$ 引出一条射线，可以发现这 $n^2$ 个点均唯一存在于其中一条射线上，应为当 $\gcd(i,j)\not=1$ 时，$(i,j)$ 会被 $(\frac{i}{\gcd{(i,j)}},\frac{j}{\gcd{(i,j)}})$ 引出的射线覆盖。
+我们再对每个 $i\perp j$ 的点对 $(i,j)$ 考虑其引出射线覆盖的点数，不难发现恰好就是 $\frac{n}{\max{(i,j)}}$，因为对所有 $1\le k\le \frac{n}{\max{(i,j)}}$，点对 $(ik,j...
+            
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/article/sol-P10532/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+   
+
+
+<article id="post-sol-P10264" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/article/sol-P10264/">P10264 [GESP202403 八级] 接竹竿</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2024-05-11T12:59:00.000Z" itemprop="datePublished">2024-05-11</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3/">洛谷题解</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            1.4k 词 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            
+              Description题目传送门：P10264 [GESP202403 八级] 接竹竿
+思维题，考虑倍增。
+Analysis
+$30pts$ 模拟，$1\le a_i\le13$，根据题意，队列中不会存在两个相同的点数，所以队列的最大长度为 $13$，对于每一个 $(l,r)$，模拟加队列的过程，每添加一个牌从队列头开始查找有无相同的点数，如有则从队列中删除所有后续的元素。复杂度为 $O(T\times q\times N\times13)$。
+$100pts$ 倍增，一共 $13$ 个点数，由题意，从自身出发，到下一个相同点数，这样的整段都可以被取走。每个点都可以维护下一个相同点数的位置。\但是这样的跳跃速度还是太慢了，通过倍增来加速。$nxt[i][j]$ 表示从 $i$ 出发的，第 $2\land j$ 个段的结尾位置。可知 $nxt[i][j+1]=nxt[nxt[i][j]+1][j]$。\复杂度 $O(T\times q\times \log N)$。
+
+Code12345678910111213141516171819202122232425262728293031...
+            
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/article/sol-P10264/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+
+
+
+
+
+
    
 
 
